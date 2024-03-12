@@ -1,0 +1,85 @@
+/** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require("tailwindcss/defaultTheme");
+
+module.exports = {
+  content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ["Inter", ...defaultTheme.fontFamily.sans],
+      },
+      spacing: {
+        13: "3.25rem",
+        15: "3.75rem",
+        17: "4.25rem",
+        18: "4.5rem",
+        19: "4.75rem",
+        21: "5.25rem",
+        22: "5.5rem",
+        23: "5.75rem",
+        25: "6.25rem",
+        26: "6.5rem",
+        28: "6.75rem",
+        29: "7.25rem",
+        30: "7.5rem",
+        31: "7.75rem",
+      },
+      maxWidth: { "gl-wide": "1460px", "w-1": "1464px" },
+      colors: {
+        "c-1": "#292929",
+        "c-2": "#2384F8",
+        "c-3": "#808080",
+        "c-4": "#C7E0FF",
+        "c-5": "#B3B3B3",
+        "c-6": "#FF4F4F",
+        "c-7": "#F5F5F5",
+        "c-8": "#FFE1E1",
+        "c-9": "#3897F0",
+        "c-10": "#363636",
+        "gl-1": { hover: "#0F7CFF", DEFAULT: "#2384F8" },
+        "gl-3": "#F5F5F5",
+        "gl-4": { hover: "#FFE1E1", DEFAULT: "#FF4F4F" },
+        "gl-5": "#B3B3B3",
+        "gl-6": "#808080",
+        "gl-7": "#5A43E4",
+        "gl-8": "#E8523F",
+        "gl-9": "#00A0B6",
+        "gl-10": "#F8B849",
+        "gl-11": "#C0DBFD",
+        "gl-12": "#E9E9E9",
+        "gl-13": "#292929",
+        "gl-blue": {
+          1: "#0075FF",
+          2: "#E3F0FF",
+        },
+        "gl-red": {
+          1: "#FF4F4F",
+          2: "#FFE1E1",
+        },
+        "gl-dark": {
+          1: "#292929",
+          2: "#B3B3B3",
+          3: "#808080",
+        },
+        "gl-light": {
+          1: "#F5F5F5",
+        },
+      },
+      fontSize: { xxs: "0.625rem" },
+      zIndex: {
+        1: 1,
+        2: 2,
+        3: 3,
+        4: 4,
+        5: 5,
+        6: 6,
+        7: 7,
+        8: 8,
+        9: 9,
+      },
+    },
+  },
+  safelist: ["fixed"],
+  plugins: [],
+};

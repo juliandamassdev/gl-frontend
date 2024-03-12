@@ -1,0 +1,120 @@
+/* Tailwind CSS */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Main */
+
+body {
+  @apply font-sans text-gl-dark-1;
+}
+
+.container {
+  @apply px-4 lg:px-6 mx-auto;
+}
+
+.square {
+  @apply relative w-full;
+}
+
+.square::before {
+  content: "";
+  @apply block w-full pb-[100%];
+}
+
+.square .square-content {
+  @apply absolute top-0 left-0 w-full h-full;
+}
+
+.bg-dark-header {
+  box-shadow: -53.733333587646484px 53.733333587646484px 53.733333587646484px 0px rgba(255, 255, 255, 0.113) inset;
+  box-shadow: 53.733333587646484px -53.733333587646484px 53.733333587646484px 0px rgba(194, 194, 194, 0.113) inset;
+  background: rgba(255, 255, 255, 0.113);
+}
+
+.bg-custom-1 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    linear-gradient(180deg, rgba(28, 26, 25, 0) -300%, rgba(28, 26, 25, 0.96) 100%);
+}
+
+.container-gl {
+  @apply w-full max-w-gl-wide mx-auto px-4;
+}
+
+.marketplace-featured-tools {
+  background: linear-gradient(330.28deg, #000000 -22.63%, #363636 112.01%);
+}
+
+/* End main */
+
+/* Toastify */
+
+.Toastify__toast-container {
+  width: auto !important;
+  max-width: 100% !important;
+  padding: 0 1rem !important;
+}
+
+.Toastify__toast {
+  border-radius: 1rem !important;
+  min-height: unset !important;
+}
+
+.Toastify__toast-body {
+  align-items: flex-start !important;
+}
+
+.Toastify__toast-icon {
+  margin-top: 2px !important;
+}
+
+.Toastify__close-button {
+  padding: 10px 4px 10px 8px !important;
+}
+
+/* End toastify */
+
+/* Carousel */
+
+.flicking-panel {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.flicking-panel.selected {
+  opacity: 1;
+}
+
+/* End carousel */
+
+/* Docs */
+
+.docs h2 {
+  @apply mb-5 text-[40px] text-[#5E6062] font-bold;
+}
+
+.docs h3 {
+  @apply text-2xl font-bold;
+}
+
+.docs h4 {
+  @apply font-bold;
+}
+
+.docs ul {
+  @apply list-disc pl-4;
+}
+
+/* End docs */
+
+/* Footer */
+
+.footer {
+  background: linear-gradient(0deg, #292929, #292929), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+
+/* End footer */
